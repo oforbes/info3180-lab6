@@ -3,7 +3,8 @@
     <head>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 
-        <link rel="stylesheet" type="text/css" href="https://www.w3schools.com/lib/w3.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
 </head>
 <body>
     
@@ -26,8 +27,9 @@ app.controller("myCtrl", function($scope) {
     } 
 });
 </script>
-
+<center>
 <div ng-app="myShoppingList" ng-controller="myCtrl">
+    <h3>My Shopping List</h3>
   <ul>
     <li ng-repeat="x in products">{{x}}
     <span ng-click="removeItem($index)">&times;</span>
@@ -37,6 +39,6 @@ app.controller("myCtrl", function($scope) {
   <button ng-click="addItem()">Add</button>
   <p>{{errortext}}</p>
 </div>
-    
+</center>  
 </body>
 </html>
